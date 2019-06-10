@@ -1,0 +1,22 @@
+server:
+  port: 8752
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+feign:
+  hystrix:
+    enabled: true
+spring:
+  rabbitmq:
+    host: 172.16.10.2
+    username: test
+    password: test
+    port: 5672
+    virtual-host: turbine
+#logging:
+#  path: logs\
+#  level:
+#    root: debug

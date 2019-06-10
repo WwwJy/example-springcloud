@@ -1,0 +1,15 @@
+server:
+  port: 8751
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    example:
+      path: /**
+      serviceId: example-feign
+    ## 当给定路径无法访问时，跳转到默认的路由
+    error: /error/**

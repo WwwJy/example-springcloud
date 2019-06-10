@@ -1,0 +1,24 @@
+server:
+  port: 8754
+spring:
+  rabbitmq:
+    host: 172.16.10.2
+    username: test
+    password: test
+    port: 5672
+    virtual-host: turbine
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+turbine:
+  stream:
+    port: 8989
+management:
+  port: 8989
+#logging:
+#  path: logs\
+#  level:
+#    root: debug
