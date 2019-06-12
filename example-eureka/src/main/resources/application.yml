@@ -12,7 +12,5 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
-#logging:
-#  path: logs\
-#  level:
-#    root: info
+logging:
+  file: ./log/eureka.log

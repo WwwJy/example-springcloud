@@ -12,10 +12,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableHystrix
 @EnableCircuitBreaker
 @EnableFeignClients
-public class ExampleClientApplication {
+public class ExampleClientSlaveApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ExampleClientApplication.class, args);
+        SpringApplication.run(ExampleClientSlaveApplication.class, args);
     }
 
 }

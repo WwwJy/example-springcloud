@@ -6,10 +6,30 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+spring:
+  rabbitmq:
+    host: 172.16.10.2
+    username: test
+    password: test
+    port: 5672
+    virtual-host: turbine
 zuul:
   routes:
-    example:
-      path: /**
-      serviceId: example-feign
+    master:
+      path: /master/**
+      serviceId: example-client
+    slave:
+      path: /slave/**
+      serviceId: example-client-slave
     ## 当给定路径无法访问时，跳转到默认的路由
     error: /error/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+logging:
+  file: ./log/zuul.log

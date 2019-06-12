@@ -1,0 +1,30 @@
+server:
+  port: 8781
+eureka:
+  instance:
+    hostname: localhost
+    metadata-map:
+      user.name: root
+      user.password: root
+    health-check-url-path: /actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  security:
+    user:
+      name: root
+      password: root
+  profiles:
+    active: development
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude:
+          include: "*"
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9090

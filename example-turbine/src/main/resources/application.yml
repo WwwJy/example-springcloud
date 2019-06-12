@@ -17,8 +17,13 @@ turbine:
   stream:
     port: 8989
 management:
-  port: 8989
-#logging:
-#  path: logs\
-#  level:
-#    root: debug
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+logging:
+  file: ./log/turbine.log

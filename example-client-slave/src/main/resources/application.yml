@@ -1,5 +1,5 @@
 server:
-  port: 8771
+  port: 8772
 eureka:
   instance:
     hostname: localhost
@@ -19,4 +19,4 @@ management:
       show-details: ALWAYS
 # 为了使得监控器监控到日志，要加入日志配置
 logging:
-  file: ./log/client-master.log
+  file: ./log/client-slave.log
