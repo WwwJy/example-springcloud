@@ -6,6 +6,7 @@
 *仪表盘地址: http://localhost:8753/hystrix*
 
 *仪表盘监控流量地址: http://localhost:8754/turbine.stream*
+
 *健康管理页面: http://localhost:8781/*
 
 ## 使用说明
