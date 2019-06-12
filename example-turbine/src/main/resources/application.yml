@@ -12,7 +12,7 @@ eureka:
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
 turbine:
   stream:
     port: 8989
