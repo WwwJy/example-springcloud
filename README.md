@@ -6,6 +6,7 @@
 *仪表盘地址: http://localhost:8753/hystrix*
 
 *仪表盘监控流量地址: http://localhost:8754/turbine.stream*
+
 *健康管理页面: http://localhost:8781/*
 
 ## 使用说明
@@ -19,7 +20,7 @@ V1.0.2：
 
 *1.zuul 配置直连到client端*
 
-*2.feign模块直接加入到client端，两个client端通过feign进行rpc调用。(组件中的example-feign作为配置参考，不需要启动此模块)*
+*2.feign模块直接加入到client端，两个client端通过feign进行http调用。(组件中的example-feign作为配置参考，不需要启动此模块)*
 
 *3.新增spring-admin组件模块*
 
