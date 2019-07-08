@@ -2,7 +2,7 @@ server:
   port: 8781
 eureka:
   instance:
-    hostname: 172.16.10.2
+    hostname: localhost
     metadata-map:
       user.name: admin
       user.password: admin
@@ -26,5 +26,3 @@ management:
   endpoint:
     health:
       show-details: always
-  server:
-    port: 9090
